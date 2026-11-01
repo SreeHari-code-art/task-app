@@ -1,6 +1,24 @@
 const taskForm = document.getElementById('task-form');
 const taskInput = document.getElementById('task-input');
 const taskList = document.getElementById('task-list');
+const welcomePage = document.querySelector('.Welcome-page');
+const taskContainer = document.querySelector('.container');
+const getStartedBtn = document.getElementById('get-started-btn');
+const backBtn = document.getElementById('back-btn');
+
+
+if (getStartedBtn) {
+    getStartedBtn.addEventListener('click', () => {
+        welcomePage.style.display = 'none';
+        taskContainer.style.display = 'block';
+    });
+}
+if (backBtn) {
+    backBtn.addEventListener('click', () => {
+        taskContainer.style.display = 'none';
+        welcomePage.style.display = 'block'; 
+    });
+}
 
 //fetch and display  task on load
 async function fetchTasks() {

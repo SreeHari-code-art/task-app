@@ -1,26 +1,116 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f4f7f6;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
+    background:rgb(232, 227, 227);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
 
-.container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  max-width: 500px;
+.Welcome-page {
+     background:  #ffffff;
+    padding: 50px 40px;
+    text-align: center;
+    height: 800px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
 }
+.section{
+    background-image: url(https://i.pinimg.com/736x/e3/32/72/e332727c6a5839b5a76ebdb4efc75548.jpg);
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    border-radius: 30px;
+}
+.welcome h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #329ada;
+   font-size: 46px;
+}
+.section p{
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.Welcome-page .welcome {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+.Welcome-page button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    margin-top: 100px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.Welcome-page button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.Welcome-page button:active {
+    transform: translateY(1px);
+}
+.container {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-btn {
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+    color: #000;
+}
+
+
 
 header {
   margin-bottom: 25px;
